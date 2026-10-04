@@ -128,9 +128,18 @@ form.addEventListener('submit', async (e) => {
         _captcha: 'false'
       })
     });
-    if (!res.ok) throw new Error('send failed');
-    showMsg("Message sent! Thanks for reaching out — I'll get back to you soon.", true);
-    form.reset();
+    // FormSubmit hamesha HTTP 200 bhejta hai — asal jawab body mein hota hai
+    let data = {};
+    try { data = await res.json(); } catch (e) { /* ignore */ }
+    const sent = res.ok && (data.success === true || data.success === 'true');
+    if (sent) {
+      showMsg("Message sent! Thanks for reaching out — I'll get back to you soon.", true);
+      form.reset();
+    } else if (data.message && /activat/i.test(data.message)) {
+      showMsg('Thanks for reaching out! The form is being activated — please email me directly for now.', false);
+    } else {
+      throw new Error('send failed');
+    }
   } catch (err) {
     showMsg('Could not send right now. Please email me directly instead.', false);
   }

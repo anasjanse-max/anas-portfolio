@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anas Jan — Flutter &amp; Android Developer</title>
+<meta name="description" content="Portfolio of Anas Jan, Software Developer and BS Software Engineering student at NUML, Islamabad. Flutter & Android apps, built in public.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<nav id="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#home">Anas<span>Jan</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-primary btn-sm nav-cta">Hire Me</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ================= HERO (3D) ================= -->
+<header class="hero" id="home">
+  <div class="hero-scene" id="heroScene">
+    <div class="orb orb-1" data-depth="25"></div>
+    <div class="orb orb-2" data-depth="55"></div>
+    <div class="orb orb-3" data-depth="40"></div>
+    <div class="grid-floor" data-depth="15"></div>
+    <div class="ring3d ring-a" data-depth="80"><i></i></div>
+    <div class="ring3d ring-b" data-depth="110"><i></i></div>
+    <div class="cube3d" data-depth="70">
+      <div class="face f1"></div><div class="face f2"></div><div class="face f3"></div>
+      <div class="face f4"></div><div class="face f5"></div><div class="face f6"></div>
+    </div>
+  </div>
+
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <span class="eyebrow">Welcome to my portfolio</span>
+      <h1>Hello, I'm <span class="grad">Anas Jan</span></h1>
+      <div class="role">Software Developer · Flutter &amp; Android App Development</div>
+      <p class="lead">BS Software Engineering student at NUML, Islamabad. I design and build clean, professional mobile apps — from idea to a polished product on your phone.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+      <div class="socials">
+        <!-- LinkedIn: apne profile ka link (neeche contact mein bhi) -->
+        <a href="https://www.linkedin.com/in/anas-jan-dev" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/channel/UCuQyF_syoYH00c81SIOlSvA" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube">
+          <svg viewBox="0 0 24 24"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.5A3.02 3.02 0 0 0 .5 6.19C0 8.07 0 12 0 12s0 3.93.5 5.81a3.02 3.02 0 0 0 2.12 2.14c1.88.5 9.38.5 9.38.5s7.5 0 9.38-.5a3.02 3.02 0 0 0 2.12-2.14C24 15.93 24 12 24 12s0-3.93-.5-5.81zM9.55 15.57V8.43L15.82 12l-6.27 3.57z"/></svg>
+        </a>
+        <!-- APNA EMAIL YAHAN BADLEIN -->
+        <a href="mailto:anas.jan.se@gmail.com" aria-label="Email" title="Email">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-photo">
+      <div class="photo-stage" data-tilt>
+        <div class="photo-layer l1"></div>
+        <div class="photo-layer l2"></div>
+        <div class="photo-ring"><div class="photo-inner">
+          <div class="photo-fallback">AJ</div>
+          <!-- Apni photo: images/profile.jpg ko apni photo se replace kar dein -->
+          <img src="images/profile.jpg" alt="Anas Jan" onerror="this.remove()">
+        </div></div>
+        <div class="float-chip chip-1"><b>Flutter</b> Developer</div>
+        <div class="float-chip chip-2"><b>Android</b> Apps</div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+</header>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-tag">About Me</span>
+      <h2>Turning ideas into real apps</h2>
+      <p>A short introduction to who I am and what I do.</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I'm <strong>Anas Jan</strong>, a <strong>BS Software Engineering student at NUML, Islamabad</strong>, working as a <strong>software developer</strong> focused on Flutter and Android app development.</p>
+        <p>I care about building apps the right way — clean architecture, professional UI, and fully offline-first experiences where it matters. My current work includes an offline CV builder app and an Islamic app that's already in a testing track on Google Play.</p>
+        <p>Beyond code, I'm building in public — sharing my learning journey and documenting real projects, because the best way to learn is to build and show your work.</p>
+        <ul class="info-list">
+          <li><small>Name</small>Anas Jan</li>
+          <li><small>Degree</small>BS Software Engineering</li>
+          <li><small>University</small>NUML, Islamabad</li>
+          <li><small>Location</small>Islamabad, Pakistan</li>
+          <li><small>Focus</small>Flutter · Android</li>
+          <!-- APNA EMAIL YAHAN BADLEIN -->
+          <li><small>Email</small>anas.jan.se@gmail.com</li>
+        </ul>
+      </div>
+      <div class="reveal">
+        <div class="stats">
+          <div class="stat" data-tilt><div class="num" data-count="2">0</div><div class="suffix">+</div><div class="lbl">Apps in Development</div></div>
+          <div class="stat" data-tilt><div class="num" data-count="6">0</div><div class="suffix">+</div><div class="lbl">Core Technologies</div></div>
+          <div class="stat" data-tilt><div class="num" data-count="100">0</div><div class="suffix">%</div><div class="lbl">Commitment to Quality</div></div>
+        </div>
+        <div class="quote-card" data-tilt>
+          <p>"The best way to learn is to build — and to show your work."</p>
+          <small>— My building-in-public philosophy</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="alt">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-tag">My Skills</span>
+      <h2>What I work with</h2>
+      <p>The technologies and tools I use to design and ship mobile apps.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal" data-tilt><div class="skill-icon">Fl</div><h3>Flutter &amp; Dart</h3><p>Cross-platform mobile apps with beautiful, native-quality UI from a single codebase.</p><div class="skill-lvl"><span>Proficiency</span><span>90%</span></div><div class="bar"><i data-w="90"></i></div></div>
+      <div class="skill-card reveal" data-tilt><div class="skill-icon">An</div><h3>Android Development</h3><p>Native Android apps — activities, permissions, storage, and Play Store-ready builds.</p><div class="skill-lvl"><span>Proficiency</span><span>80%</span></div><div class="bar"><i data-w="80"></i></div></div>
+      <div class="skill-card reveal" data-tilt><div class="skill-icon">Jv</div><h3>Java</h3><p>Strong OOP foundations and Android-side development with Java.</p><div class="skill-lvl"><span>Proficiency</span><span>75%</span></div><div class="bar"><i data-w="75"></i></div></div>
+      <div class="skill-card reveal" data-tilt><div class="skill-icon">Py</div><h3>Python</h3><p>Scripting, automation, and backend logic — plus AI-assisted workflows.</p><div class="skill-lvl"><span>Proficiency</span><span>70%</span></div><div class="bar"><i data-w="70"></i></div></div>
+      <div class="skill-card reveal" data-tilt><div class="skill-icon">API</div><h3>REST APIs</h3><p>Connecting apps to real-world data — requests, JSON parsing, and error handling.</p><div class="skill-lvl"><span>Proficiency</span><span>80%</span></div><div class="bar"><i data-w="80"></i></div></div>
+      <div class="skill-card reveal" data-tilt><div class="skill-icon">Git</div><h3>Git &amp; Version Control</h3><p>Clean commit history, branching, and collaborating without breaking things.</p><div class="skill-lvl"><span>Proficiency</span><span>85%</span></div><div class="bar"><i data-w="85"></i></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-tag">Portfolio</span>
+      <h2>Featured projects</h2>
+      <p>Real apps I'm designing, building, and shipping — not tutorials, real products.</p>
+    </div>
+    <div class="proj-grid">
+      <article class="proj reveal" data-tilt>
+        <div class="proj-banner pb-1"><span>CV Builder</span><div class="proj-glare"></div></div>
+        <div class="proj-body">
+          <span class="proj-status">In Development</span>
+          <h3>CV Builder — Offline Resume Builder</h3>
+          <p>A production-ready offline CV builder for Android: a 13-step guided form, real PDF-rendered template previews, and fully offline storage with Hive and Riverpod. No internet needed, no data leaves the phone.</p>
+          <div class="tags"><span>Flutter</span><span>Dart</span><span>Hive</span><span>Riverpod</span><span>Android</span></div>
+        </div>
+      </article>
+      <article class="proj reveal" data-tilt>
+        <div class="proj-banner pb-2"><span>Prayer Times</span><div class="proj-glare"></div></div>
+        <div class="proj-body">
+          <span class="proj-status">In Testing</span>
+          <h3>Prayer Times — Islamic App</h3>
+          <p>An Islamic app with prayer times, Quran features, and Qibla direction — currently in a testing track on Google Play, being refined with real user feedback before public launch.</p>
+          <div class="tags"><span>Flutter</span><span>Android</span><span>Play Console</span></div>
+        </div>
+      </article>
+      <article class="proj reveal" data-tilt>
+        <div class="proj-banner pb-3"><span>AI, Actually Tested</span><div class="proj-glare"></div></div>
+        <div class="proj-body">
+          <span class="proj-status">Live</span>
+          <h3>AI, Actually Tested — YouTube Channel</h3>
+          <p>An English-language faceless tech channel where AI tools get genuinely tested — real workflows, honest results, aimed at European audiences. Produced end-to-end: research, scripts, video, and SEO.</p>
+          <div class="tags"><span>Content</span><span>AI Video</span><span>SEO</span></div>
+          <a class="proj-link" href="https://www.youtube.com/channel/UCuQyF_syoYH00c81SIOlSvA" target="_blank" rel="noopener">Visit channel →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section id="education" class="alt">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-tag">Background</span>
+      <h2>Education &amp; journey</h2>
+      <p>Where I'm studying and how I'm growing as a developer.</p>
+    </div>
+    <div class="timeline">
+      <div class="t-item reveal" data-tilt>
+        <div class="when">Present</div>
+        <h3>BS Software Engineering — NUML, Islamabad</h3>
+        <p>Studying software engineering while building real Android apps on the side — applying classroom concepts directly to shipped products.</p>
+      </div>
+      <div class="t-item reveal" data-tilt>
+        <div class="when">2026</div>
+        <h3>Flutter &amp; Mobile App Development</h3>
+        <p>Deep focus on Flutter, Dart, and Android — state management with Riverpod, offline storage with Hive, REST API integration, and the Play Store publishing workflow.</p>
+      </div>
+      <div class="t-item reveal" data-tilt>
+        <div class="when">Ongoing</div>
+        <h3>Building in Public</h3>
+        <p>Sharing the learning journey on LinkedIn and YouTube — project breakdowns, lessons learned, and honest progress updates.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-tag">Contact</span>
+      <h2>Let's work together</h2>
+      <p>Have a project, an idea, or just want to say hello? Fill in the form — your message lands straight in my inbox.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="c-info reveal" data-tilt>
+        <h3>Get in touch</h3>
+        <p>I'm open to freelance projects, collaborations, and interesting conversations about apps and software.</p>
+        <div class="c-row">
+          <div class="c-ico"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
+          <!-- APNA EMAIL YAHAN BADLEIN -->
+          <div><small>Email</small><a href="mailto:anas.jan.se@gmail.com">anas.jan.se@gmail.com</a></div>
+        </div>
+        <div class="c-row">
+          <div class="c-ico"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg></div>
+          <div><small>Location</small><span class="val">Islamabad, Pakistan</span></div>
+        </div>
+        <div class="c-row">
+          <div class="c-ico"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></div>
+          <div><small>LinkedIn</small><a href="https://www.linkedin.com/in/anas-jan-dev" target="_blank" rel="noopener">linkedin.com/in/anas-jan-dev</a></div>
+        </div>
+        <a class="btn btn-primary btn-sm" style="margin-top:22px" href="https://www.linkedin.com/in/anas-jan-dev" target="_blank" rel="noopener">Connect on LinkedIn</a>
+      </div>
+
+      <form id="contactForm" class="reveal" novalidate>
+        <div class="form-msg" id="formMsg"></div>
+        <div class="f-row">
+          <div class="f-group">
+            <label for="fName">Your name</label>
+            <input id="fName" name="name" type="text" placeholder="e.g. Ahmed Khan" required autocomplete="name">
+          </div>
+          <div class="f-group">
+            <label for="fEmail">Your email</label>
+            <input id="fEmail" name="email" type="email" placeholder="you@example.com" required autocomplete="email">
+          </div>
+        </div>
+        <div class="f-group">
+          <label for="fMsg">Message</label>
+          <textarea id="fMsg" name="message" placeholder="Tell me about your project or idea..." required></textarea>
+        </div>
+        <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
+        <button type="submit" class="btn btn-primary" id="sendBtn" style="width:100%;justify-content:center">Send Message</button>
+        <p class="form-note">Delivered directly to my email inbox. I usually reply within a day.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <a class="brand" href="#home">Anas<span>Jan</span></a>
+    <p>© <span id="year">2026</span> Anas Jan · Designed &amp; built with care in Islamabad</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

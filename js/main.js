@@ -118,7 +118,7 @@ form.addEventListener('submit', async (e) => {
   sendBtn.disabled = true;
   sendBtn.textContent = 'Sending...';
   try {
-    const res = await fetch('https://formsubmit.co/ajax/' + encodeURIComponent(FORM_EMAIL), {
+    const res = await fetch('https://formsubmit.co/ajax/' + FORM_EMAIL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify({

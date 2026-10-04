@@ -32,9 +32,12 @@ Step 4 (chalane ke liye):
 ------------------------------------------------------------
 2) APNI PHOTO KAISE LAGAYEIN
 ------------------------------------------------------------
-- Apni ek achhi photo lein, uska naam "profile.jpg" rakhein.
-- Use images/ folder mein paste karke purani profile.jpg ko
-  REPLACE kar dein. Website par khud lag jayegi. Bas!
+ - Apni ek achhi photo lein, uska naam "profile.jpg" rakhein.
+ - GitHub par repository kholein -> "Add file" -> "Upload files"
+   -> profile.jpg drag-drop karke Commit karein. Website par
+   khud lag jayegi. Bas!
+ - (Local computer par: images/ folder mein profile.jpg
+   pehle se mojood hai.)
 - (Mere paas aapki photo nahi thi, is liye filhal "AJ"
   monogram wali placeholder lagi hai. Apni picture mujhe
   bhej dein to main laga kar updated zip de dunga.)

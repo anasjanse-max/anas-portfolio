@@ -24,6 +24,7 @@ window.addEventListener('scroll', () => {
   let cur = 'home';
   sections.forEach(s => { if (window.scrollY >= s.offsetTop - 140) cur = s.id; });
   navAs.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + cur));
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 24);
 }, { passive: true });
 
 /* ---------- Reveal on scroll ---------- */

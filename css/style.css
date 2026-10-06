@@ -34,7 +34,9 @@ section.alt{background:var(--bg2)}
 nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:.3s;
   background:rgba(255,255,255,.82);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
   border-bottom:1px solid var(--line)}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;height:70px}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:70px;transition:height .3s}
+nav.scrolled{box-shadow:0 10px 34px rgba(15,31,61,.12)}
+nav.scrolled .nav-inner{height:60px}
 .brand{font-weight:800;font-size:1.4rem;letter-spacing:.5px;color:var(--text)}
 .brand span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .nav-links{display:flex;gap:34px;list-style:none}
@@ -76,9 +78,13 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:.3s;
 @keyframes cubespin{from{transform:rotateX(-18deg) rotateY(0)}to{transform:rotateX(-18deg) rotateY(360deg)}}
 
 .hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:56px;align-items:center;position:relative;z-index:2}
-.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.84rem;font-weight:700;
-  color:var(--blue);letter-spacing:2.5px;text-transform:uppercase;margin-bottom:20px}
-.eyebrow::before{content:"";width:36px;height:2px;background:var(--grad);border-radius:2px}
+.avail{display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);
+  padding:9px 20px;border-radius:999px;font-size:.86rem;font-weight:600;color:var(--text);
+  box-shadow:0 4px 16px rgba(15,31,61,.08);margin-bottom:22px}
+.pulse-dot{width:10px;height:10px;border-radius:50%;background:#22c55e;position:relative;flex:none}
+.pulse-dot::after{content:"";position:absolute;inset:-4px;border-radius:50%;border:2px solid #22c55e;
+  animation:pulse 1.8s ease-out infinite}
+@keyframes pulse{0%{transform:scale(.55);opacity:.9}100%{transform:scale(1.5);opacity:0}}
 .hero h1{font-size:clamp(2.7rem,5.6vw,4.4rem);line-height:1.1;font-weight:800;margin-bottom:16px;color:var(--text)}
 .grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .role{font-size:clamp(1.12rem,2.4vw,1.45rem);color:var(--muted);font-weight:500;margin-bottom:22px}

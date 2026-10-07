@@ -69,7 +69,7 @@ if (finePointer) {
       if (raf) cancelAnimationFrame(raf);
       raf = requestAnimationFrame(() => {
         card.style.transform =
-          `perspective(950px) rotateY(${(x * 10).toFixed(2)}deg) rotateX(${(-y * 10).toFixed(2)}deg) translateY(-5px)`;
+          `perspective(950px) rotateY(${(x * 6).toFixed(2)}deg) rotateX(${(-y * 6).toFixed(2)}deg) translateY(-5px)`;
       });
     });
     card.addEventListener('mouseleave', () => {

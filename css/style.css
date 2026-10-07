@@ -346,3 +346,40 @@ footer::before{content:"";position:absolute;top:-1px;left:0;right:0;height:1px;
 /* Card hover refinement */
 .proj:hover{transform:translateY(-6px)}
 .skill-card:hover{transform:translateY(-6px)}
+
+/* ============================================================
+   MOBILE-VISIBLE ANIMATIONS — tap ripple, auto sheen, press
+   ============================================================ */
+
+/* Tap ripple element (added by JS) */
+.btn .ripple{position:absolute;border-radius:50%;z-index:2;pointer-events:none;
+  background:rgba(255,255,255,.55);transform:scale(0);
+  animation:ripple .65s ease-out forwards}
+@keyframes ripple{to{transform:scale(4);opacity:0}}
+
+/* Stronger press feedback on every interactive element */
+.btn:active{transform:scale(.94)}
+.socials a:active{transform:scale(.86)}
+.proj:active{transform:scale(.985)}
+.skill-card:active{transform:scale(.98)}
+.float-chip:active{transform:scale(.94)}
+.nav-links a:active{color:var(--gold)}
+
+/* Auto-playing sheen on primary buttons — visible without hover (touch screens) */
+@media (hover:none){
+  .btn-primary::after{animation:sheenauto 4.2s ease-in-out infinite}
+}
+@keyframes sheenauto{0%,58%{left:-90px}88%,100%{left:calc(100% + 90px)}}
+
+/* Soft breathing glow on the nav CTA */
+.nav-cta{animation:ctaglow 3.2s ease-in-out infinite}
+@keyframes ctaglow{
+  0%,100%{box-shadow:0 8px 22px rgba(173,138,60,.35)}
+  50%{box-shadow:0 8px 32px rgba(173,138,60,.62)}
+}
+
+/* Gentle float on the hero photo so the top of the page feels alive */
+@media (hover:none){
+  .photo-stage{animation:photofloat 7s ease-in-out infinite}
+}
+@keyframes photofloat{0%,100%{translate:0 0}50%{translate:0 -10px}}
